@@ -1,0 +1,46 @@
+﻿@using formSubmission.Models
+@model User
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>New User</title>
+        <link rel="stylesheet" href="~/css/style.css">
+    </head>
+    <body>
+        <h1>Enter your information</h1>
+        <form asp-action="Create" asp-controller="Home" method="POST">
+
+            <span asp-validation-for="FirstName"></span>
+            <label asp-for="FirstName" class="title">First Name</label>
+            <input asp-for="FirstName" class="input">
+            <br>
+
+            <span asp-validation-for="LastName"></span>
+            <label asp-for="LastName" class="title">Last Name</label>
+            <input asp-for="LastName" class="input">
+            <br>
+
+            <span asp-validation-for="Age"></span>
+            <label asp-for="Age" class="title">Age</label>
+            <input asp-for="Age" class="input">
+            <br>
+
+            <span asp-validation-for="Email"></span>
+            <label asp-for="Email" class="title">Email</label>
+            <input asp-for="Email" class="input">
+            <br>
+
+            <span asp-validation-for="Password"></span>
+            <label asp-for="Password" class="title">Password</label>
+            <input asp-for="Password" class="input">
+            <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>

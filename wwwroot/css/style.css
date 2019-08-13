@@ -1,0 +1,9 @@
+.title, h1 {
+    margin-bottom: 25px;
+}
+
+.input {
+    left: 550px;
+    position: absolute;
+    margin-bottom: 25px;
+}
